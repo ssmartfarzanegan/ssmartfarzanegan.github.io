@@ -3,8 +3,6 @@
 main:
   - title: "صفحه اصلی"
     url: /index/
-  - title: "سامانه مالی سمپاد"
-    url: https://msampad.razaviedu.ir/
   - title: "معرفی دبیرستان"
     url: /about/
   - title: "اولیا مدرسه"
@@ -19,12 +17,12 @@ main:
     url: /metaprogram/
   - title: "مشاوره"
     url: /co/
-  - title: "اولیا و مربیان"
-    url: /groups/
   - title: "بانک سوال"
     url: /answerbank/
   - title: "تماس با ما"
     url: /contactus/
+  - title: "سامانه مالی سمپاد"
+    url: https://msampad.razaviedu.ir/
 
 
  
