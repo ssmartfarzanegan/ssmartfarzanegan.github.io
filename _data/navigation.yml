@@ -3,12 +3,14 @@
 main:
   - title: "صفحه اصلی"
     url: /index/
-  - title: "معرفی دبیرستان"
-    url: /about/
-  - title: "اولیا مدرسه"
-    url: /cheif/
-  - title: "گروه های آموزشی"
-    url: /teachers/
+  - title: "درباره مدرسه"
+    children:
+      - title: "معرفی دبیرستان"
+        url: /about/
+      - title: "اولیا مدرسه"
+        url: /cheif/
+      - title: "گروه های آموزشی"
+        url: /teachers/
   - title: "واحد فرهنگی"
     url: /cultural/
   - title: "گروه پژوهش"

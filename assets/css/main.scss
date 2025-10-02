@@ -23,3 +23,10 @@ p {
   margin: 10px auto;
   display: block;
 }
+
+// CSS سفارشی شما
+.greedy-nav .visible-links {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
