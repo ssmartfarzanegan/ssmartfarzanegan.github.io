@@ -129,12 +129,12 @@ analytics:
 
 # Author information
 author:
-  name: "دبیرستان دور اول فرزانگان 5<br>اداره آموزش و پرورش مشهد"
+  name: "دبیرستان دور اول <br>فرزانگان 5 <br>اداره آموزش و پرورش مشهد"
   avatar: "/assets/images/AI_WorkGroup_FUM.jpg"
   bio: "خراسان رضوی"
   location         : "<br> مشهد مقدس <br> Contact Information: <br> Phone:+98-51- " 
   links:
-    - label: "ُSchool Profile"
+    - label: "School Profile"
       icon: "fas fa-university"
       url: "https://razavi.medu.gov.ir/"
     - label: "AI Systems Architect"
