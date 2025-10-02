@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "fa" #"en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-masthead_title           : "دبیرستان دوره اول فرزانگان 5 مشهد"
+title                    : "دبیرستان دوره اول فرزانگان 5 مشهد"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 favicon                  : ""
@@ -31,7 +31,7 @@ baseurl                  : #"/hadisadoghiyazdi1971.github.io" # the subpath of y
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 #logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_logo            : "/assets/images/logo1.jpg"
+logo                     : "/assets/images/logo1.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
