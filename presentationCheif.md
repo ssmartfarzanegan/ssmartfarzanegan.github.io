@@ -2,8 +2,8 @@
 layout: persian  
 classes: wide rtl-layout
 dir: rtl
-title: "ارایه ها"
-permalink: /presentation/
+title: "اولیا مدرسه"
+permalink: /cheif/
 author_profile: true
 # classes: wide
 header:
@@ -13,20 +13,20 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-## ارایه ها
+## اولیا مدرسه
 
 <div class="projects-grid" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
 
   <!-- پpresent 1۱ -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-    <a href="/presentation/datalake/" style="text-decoration: none; color: inherit;">
-      <img src="/assets/Presentationimages/DataLake/PowerSectorDataLake.jpg" 
-           alt="Presentation1" 
+    <a href="/cheif/Edari/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/chiefimages/chiefExec.jpg" 
+           alt="cheif1" 
            class="project-image"
            style="width: 100%; height: 200px; object-fit: cover; display: block;">
       <div class="project-content" style="padding: 10px;">
         <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
-          Test Slide---- Data Lake for Power Sector
+          کادر اداری و اجرایی
         </h3>
       </div>
     </a>
@@ -34,35 +34,20 @@ header:
 
     <!-- پpresent 1۱ -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-    <a href="/presentation/datalake1/" style="text-decoration: none; color: inherit;">
-      <img src="/assets/Presentationimages/DataLake/PowerSectorDataLake.jpg" 
-           alt="Presentation1_1" 
+    <a href="/cheif/Teaching/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/chiefimages/Teaching.jpg" 
+           alt="cheif2" 
            class="project-image"
            style="width: 100%; height: 200px; object-fit: cover; display: block;">
       <div class="project-content" style="padding: 10px;">
         <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
-          Data Lake for Power Sector
+          اساتید 
         </h3>
       </div>
     </a>
   </div>
 
-  <!-- پروژه present 2-->
-  <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-    <a href="/presentation/prison/" style="text-decoration: none; color: inherit;">
-      <img src="/assets/Projectsimages/StreetLight/Streetlightingcontrol.png" 
-           alt="Presentation2" 
-           class="project-image"
-           style="width: 100%; height: 200px; object-fit: cover; display: block;">
-      <div class="project-content" style="padding: 10px;">
-        <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
-          Prison
-        </h3>
-      </div>
-    </a>
-  </div>
-
-  <!-- پروژه ۳ -->
+   <!-- پروژه ۳ -->
   
 
   <!-- پروژه 4 -->

@@ -7,16 +7,24 @@ main:
     url: https://msampad.razaviedu.ir/
   - title: "معرفی دبیرستان"
     url: /about/
-  - title: "معاونت ها و بخش ها"
-    url: /presentationCheif/
+  - title: "اولیا مدرسه"
+    url: /cheif/
+  - title: "گروه های آموزشی"
+    url: /teachers/
+  - title: "واحد فرهنگی"
+    url: /cultural/
+  - title: "گروه پژوهش"
+    url: /research/
+  - title: "واحد فرابرنامه"
+    url: /metaprogram/
   - title: "مشاوره"
-    url: /projectsCo/
+    url: /co/
   - title: "اولیا و مربیان"
     url: /groups/
   - title: "بانک سوال"
-    url: /people/
+    url: /answerbank/
   - title: "تماس با ما"
-    url: /people/
+    url: /contactus/
 
 
  

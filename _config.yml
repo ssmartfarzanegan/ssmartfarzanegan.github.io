@@ -129,10 +129,10 @@ analytics:
 
 # Author information
 author:
-  name: "دبیرستان دور اول <br>فرزانگان 5 <br>اداره آموزش و پرورش مشهد"
+  name: " دبیرستان دور اول فرزانگان 5  <br>اداره آموزش و پرورش مشهد"
   avatar: "/assets/images/photo.jpg"
   bio: "خراسان رضوی"
-  location  : "مشهد مقدس <br> Contact Information: <br> Phone:+98-51- " 
+  location  : "مشهد مقدس <br> Contact Information: <br> Phone:+98-51-38400846" 
   links:
     - label: "Razavi Goverment Profile"
       icon: "fas fa-university"
