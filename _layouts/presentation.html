@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css">
+  <style>
+    .site-header, .page-header, .site-footer { display: none !important; }
+    .reveal { height: 100vh; font-family: 'Vazirmatn', sans-serif; }
+    .slides { direction: ltr; text-align: center; min-height: 100vh; }
+    .slides section { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 80vh; 
+      padding: 20px; 
+    }
+    .slides img { max-width: 60%; height: auto; margin: 20px auto; }
+    .slides h1, .slides h2, .slides p { margin: 15px 0; }
+    .caption { font-size: 1.2em; color: #666; }
+    
+    /* افزایش اندازه فونت‌ها */
+    .slides h1 { 
+      font-size: 3em !important; 
+      color: #1a237e; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+    }
+    .slides h2 { 
+      font-size: 2.2em !important; 
+      color: #3949ab; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+    }
+    .slides p, .slides li { 
+      font-size: 1.5em !important; 
+      color: #333; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+    .slides ul { 
+      text-align: right; 
+      direction: rtl; 
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    /* سبک برای محتوای انگلیسی */
+    .english-ltr {
+      direction: ltr !important;
+    }
+    .english-ltr h2, 
+    .english-ltr p, 
+    .english-ltr ul {
+      text-align: center !important;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .english-ltr ul {
+      text-align: left !important;
+      display: inline-block;
+      direction: ltr;
+    }
+
+    /* سبک برای محتوای فارسی */
+    .persian-rtl {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* فلش‌های ناوبری */
+    .reveal .controls {
+      bottom: 40px;  /* کمی بالاتر از پایین */
+      z-index: 1000;
+    }
+    .reveal .controls .navigate-left, 
+    .reveal .controls .navigate-right, 
+    .reveal .controls .navigate-up, 
+    .reveal .controls .navigate-down {
+      transform: scale(2.5);
+      opacity: 0.9;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .reveal .controls .navigate-left:hover, 
+    .reveal .controls .navigate-right:hover, 
+    .reveal .controls .navigate-up:hover, 
+    .reveal .controls .navigate-down:hover {
+      opacity: 1;
+      transform: scale(2.7);
+    }
+
+   /* استایل عمومی برای لیست‌ها */
+    .slide-list {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: left;
+      display: inline-block;
+    }
+
+    /* مخصوص اسلاید انگلیسی */
+    .english-ltr img {
+      max-width: 60%;
+      height: auto;
+      margin: 20px auto;
+      display: block;   /* مرکزچین کردن تصویر */
+    }
+
+    .english-ltr .caption {
+      font-size: 1.1em;
+      color: #666;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.5/Vazirmatn-font-face.css" rel="stylesheet">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      {{ content }}
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>
+    // تنظیمات اولیه Reveal
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      slideNumber: true,
+      width: "100%",
+      height: "100%",
+      margin: 0,
+      minScale: 1,
+      maxScale: 1,
+      rtl: false // پیش‌فرض انگلیسی
+    });
+
+    // تغییر کلاس برای تشخیص زبان
+    function adjustControlsPosition() {
+      const currentSlide = Reveal.getCurrentSlide();
+      const revealElement = document.querySelector('.reveal');
+      
+      if (currentSlide.classList.contains('english-ltr')) {
+        revealElement.classList.add('english-mode');
+      } else {
+        revealElement.classList.remove('english-mode');
+      }
+    }
+
+    Reveal.on('slidechanged', adjustControlsPosition);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(adjustControlsPosition, 500);
+    });
+  </script>
+</body>
+</html>

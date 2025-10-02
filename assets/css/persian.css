@@ -1,0 +1,33 @@
+/* Persian CSS for Minimal Mistakes Theme */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Vazir', 'Tanha', 'Shabnam', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Adjustments for layout */
+.sidebar {
+    float: right;
+}
+
+.main {
+    float: left;
+}
+
+/* Fix for navigation and other elements */
+nav, .breadcrumbs, .pagination, .footer {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Better line-height for Persian text */
+p, li, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+/* Fix list alignment */
+ul, ol {
+    padding-right: 1.5em;
+    padding-left: 0;
+}

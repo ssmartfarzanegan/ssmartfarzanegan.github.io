@@ -1,0 +1,207 @@
+---
+layout: single
+---
+
+<style>
+/* راست‌چین کردن navigation */
+body.rtl-layout nav,
+body.rtl-layout .navigation,
+body.rtl-layout .navbar,
+body.rtl-layout .menu {
+    direction: rtl !important;
+    text-align: right !important;
+    justify-content: flex-end !important;
+}
+
+/* راست‌چین کردن لیست منو */
+body.rtl-layout ul.nav__list,
+body.rtl-layout ul.menu,
+body.rtl-layout ul.navigation-list {
+    direction: rtl !important;
+    text-align: right !important;
+    justify-content: flex-end !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* معکوس کردن ترتیب آیتم‌ها */
+body.rtl-layout .nav__item,
+body.rtl-layout .menu-item,
+body.rtl-layout .nav-item {
+    direction: rtl !important;
+    text-align: right !important;
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+}
+
+/* معکوس کردن flex direction اگر از flex استفاده می‌کند */
+body.rtl-layout .nav__list,
+body.rtl-layout .menu {
+    flex-direction: row-reverse !important;
+}
+
+/* استایل برای لینک‌ها */
+body.rtl-layout .nav__link,
+body.rtl-layout .menu-link {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* تغییر selector ها به صورت عمومی */
+body.rtl-layout .nav__list,
+body.rtl-layout .navigation,
+body.rtl-layout .navbar,
+body.rtl-layout .menu,
+body.rtl-layout .nav-menu,
+body.rtl-layout .main-nav {
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam' !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+body.rtl-layout .nav__item,
+body.rtl-layout .menu-item,
+body.rtl-layout .nav-item {
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam' !important;
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+}
+
+body.rtl-layout .nav__link,
+body.rtl-layout .menu-link,
+body.rtl-layout .nav-link {
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam' !important;
+    font-weight: 600 !important;
+    font-size: 1.1em !important;
+}
+
+
+/* استایل‌های مخصوص صفحات فارسی */
+.persian-page {
+    direction: rtl;
+    text-align: right;
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.persian-page h1, 
+.persian-page h2, 
+.persian-page h3, 
+.persian-page h4, 
+.persian-page h5, 
+.persian-page h6 {
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam', 'Segoe UI', Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 2px solid #eaecef;
+    padding-bottom: 0.3em;
+    margin: 1.5em 0 0.8em 0;
+}
+
+.persian-page h1 {
+    font-size: 2.2em;
+    border-bottom: 3px solid #dc3545;
+}
+
+.persian-page ul, 
+.persian-page ol {
+    padding-right: 1.5em;
+    padding-left: 0;
+}
+
+/* کلاس برای بخش‌های انگلیسی */
+.english-text {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: 'Arial', 'Helvetica', sans-serif !important;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* کلاس برای بخش‌های فارسی */
+.persian-text {
+    direction: rtl !important;
+    text-align: right !important;
+    font-family: 'B Nazanin', 'Vazir', sans-serif !important;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* برای کدهای برنامه‌نویسی */
+.code-block {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: 'Monaco', 'Consolas', monospace !important;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* در فایل persian.scss */
+.rtl-layout .page__title,
+.rtl-layout .page-title,
+.rtl-layout .post-title,
+.rtl-layout .entry-title {
+    font-family: 'B Nazanin', 'Vazir', 'Tanha', 'Shabnam' !important;
+    direction: rtl !important;
+    text-align: right !important;
+    font-weight: bold !important;
+}
+
+</style>
+
+<div class="persian-page">
+    {{ content }}
+</div>
+
+<script>
+// اضافه کردن به اسکریپت موجود
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.querySelector('.persian-page')) {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'fa');
+        
+        // بارگذاری فونت
+        const fontLink = document.createElement('link');
+        fontLink.rel = 'stylesheet';
+        fontLink.href = 'https://fonts.googleapis.com/earlyaccess/bnazanin.css';
+        document.head.appendChild(fontLink);
+        
+        // اعمال استایل روی navigation
+        setTimeout(function() {
+            const navSelectors = [
+                'nav', '.navigation', '.navbar', '.menu', 
+                '.nav-menu', '.main-nav', '.header-nav'
+            ];
+            
+            navSelectors.forEach(selector => {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(el => {
+                    el.style.fontFamily = "'B Nazanin', 'Vazir', 'Tanha', 'Shabnam'";
+                    el.style.direction = 'rtl';
+                    el.style.textAlign = 'right';
+                });
+            });
+            
+            // آیتم‌های منو
+            const menuItems = document.querySelectorAll('.nav-item, .menu-item, .nav__item');
+            menuItems.forEach(item => {
+                item.style.fontFamily = "'B Nazanin', 'Vazir', 'Tanha', 'Shabnam'";
+                item.style.marginLeft = '20px';
+                item.style.marginRight = '0';
+            });
+            
+            // لینک‌های منو
+            const menuLinks = document.querySelectorAll('.nav-link, .menu-link, .nav__link');
+            menuLinks.forEach(link => {
+                link.style.fontFamily = "'B Nazanin', 'Vazir', 'Tanha', 'Shabnam'";
+                link.style.fontWeight = '600';
+                link.style.fontSize = '1.1em';
+            });
+        }, 100);
+    }
+});
+</script>
