@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "دبیرستان دوره اول فرزانگان 5 مشهد"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-favicon                  : "/assets/images/photo_2025-10-02_12-11-49.jpg"
+favicon                  : "/assets/images/photo.jpg"
 name                     : "ّFarzanegan"
 description              : "Best School in Iran, Mashhad"
 #url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -130,11 +130,11 @@ analytics:
 # Author information
 author:
   name: "دبیرستان دور اول <br>فرزانگان 5 <br>اداره آموزش و پرورش مشهد"
-  avatar: "/assets/images/AI_WorkGroup_FUM.jpg"
+  avatar: "/assets/images/photo.jpg"
   bio: "خراسان رضوی"
-  location         : "<br> مشهد مقدس <br> Contact Information: <br> Phone:+98-51- " 
+  location  : "مشهد مقدس <br> Contact Information: <br> Phone:+98-51- " 
   links:
-    - label: "School Profile"
+    - label: "Razavi Goverment Profile"
       icon: "fas fa-university"
       url: "https://razavi.medu.gov.ir/"
     - label: "AI Systems Architect"
