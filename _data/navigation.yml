@@ -3,14 +3,12 @@
 main:
   - title: "صفحه اصلی"
     url: /index/
-  - title: "درباره مدرسه"
-    children:
-      - title: "معرفی دبیرستان"
-        url: /about/
-      - title: "اولیا مدرسه"
-        url: /cheif/
-      - title: "گروه های آموزشی"
-        url: /teachers/
+  - title: "معرفی دبیرستان"
+    url: /about/
+  - title: "اولیا مدرسه"
+    url: /cheif/
+  - title: "گروه های آموزشی"
+    url: /teachers/
   - title: "واحد فرهنگی"
     url: /cultural/
   - title: "گروه پژوهش"
@@ -19,6 +17,8 @@ main:
     url: /metaprogram/
   - title: "مشاوره"
     url: /co/
+  - title: "اولیا و مربیان"
+    url: /groups/
   - title: "بانک سوال"
     url: /answerbank/
   - title: "تماس با ما"
