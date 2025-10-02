@@ -2,7 +2,7 @@
 
 main:
   - title: "صفحه اصلی"
-    url: /index/
+    url: https://ssmartfarzanegan.github.io/
   - title: "معرفی دبیرستان"
     url: /about/
   - title: "اولیا مدرسه"
