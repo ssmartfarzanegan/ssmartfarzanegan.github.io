@@ -13,7 +13,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-# اساتید دبیرستان دوره اول فرزانگان
+# 5 اساتید دبیرستان دوره اول فرزانگان
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;">
   <!-- ستون اول -->
